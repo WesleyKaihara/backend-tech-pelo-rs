@@ -22,9 +22,9 @@ export default class OportunidadeService {
   adicionarOportunidade(
     input: AdicionarOportunidadeInput
   ): Promise<Oportunidade> {
-    const listarOportunidades = new AdicionarOportunidade(
+    const adicionarOportunidade = new AdicionarOportunidade(
       this.oportunidadeRepository
     );
-    return listarOportunidades.execute(input);
+    return adicionarOportunidade.execute(input);
   }
 }

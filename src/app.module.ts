@@ -6,6 +6,7 @@ import { configuration } from "./shared/module/config/configuration";
 import { LoggerMiddleware } from "./shared/utils/logger";
 import { OportunidadeModule } from "@oportunidade/oportunidade.module";
 import { PersistenceModule } from "./shared/module/persistence/persistence.module";
+import { PessoaModule } from "@pessoa/pessoa.module";
 
 @Module({
   imports: [
@@ -16,6 +17,7 @@ import { PersistenceModule } from "./shared/module/persistence/persistence.modul
     }),
     PersistenceModule,
     OportunidadeModule,
+    PessoaModule,
   ],
   controllers: [],
   providers: [],

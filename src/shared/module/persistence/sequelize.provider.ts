@@ -1,4 +1,5 @@
 import OportunidadeModel from "@oportunidade/shared/persistence/model/OportunidadeModel";
+import PessoaModel from '@pessoa/shared/persistence/model/PessoaModel';
 import { Sequelize } from "sequelize-typescript";
 
 export const sequelizeProvider = {
@@ -8,7 +9,7 @@ export const sequelizeProvider = {
       dialect: "sqlite",
       storage: ".db/data.sqlite3",
     });
-    sequelize.addModels([OportunidadeModel]);
+    sequelize.addModels([OportunidadeModel, PessoaModel]);
 
     if (process.env.NODE_ENV === "development") {
       await sequelize.sync();

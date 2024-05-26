@@ -19,6 +19,7 @@
     "noFallthroughCasesInSwitch": false,
     "paths": {
       "@oportunidade/*": ["./src/module/oportunidade/*"],
+      "@pessoa/*": ["./src/module/pessoa/*"],
       "@src/*": ["./src/*"],
     },
   }
